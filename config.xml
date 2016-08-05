@@ -4,12 +4,12 @@
     xmlns:android = "http://schemas.android.com/apk/res/android"
     id        = "kmrs.mobile.app"
     version   = "1.3.3">
-    <name>Karenderia Mobile App</name>
+    <name>Trujillo Delivery</name>
     <description>
-        Karenderia mobile app version
+        Trujillo Delivery 
     </description>
-    <author email="basti@codemywebapps.com" href="http://cordova.io">
-        codemywebapps.com
+    <author email="info@trujillodelivery.com" href="http://trujillodelivery.com">
+        trujillodelivery.com
     </author>
     <icon src="icon.png" />           
     <content src="index.html" />
