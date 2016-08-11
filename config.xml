@@ -3,13 +3,13 @@
     xmlns:gap = "http://phonegap.com/ns/1.0"
     xmlns:android = "http://schemas.android.com/apk/res/android"
     id        = "kmrs.mobile.app"
-    version   = "1.3.3">
+    version   = "1.0.0">
     <name>Trujillo Delivery</name>
     <description>
         Trujillo Delivery 
     </description>
-    <author email="info@trujillodelivery.com" href="http://trujillodelivery.com">
-        trujillodelivery.com
+    <author email="ing.rogersb@srconect.com" href="http://www.srconect.com">
+        SR. CONNECT EIRL.
     </author>
     <icon src="icon.png" />           
     <content src="index.html" />
