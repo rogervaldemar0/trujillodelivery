@@ -59,19 +59,19 @@
 <ons-modal var="loader">
   <ons-icon icon="fa-circle-o-notch" spin="true"></ons-icon>
   <br>
-  <br> <span class="trn" data-trn-key="please_wait">Please wait</span>.  
+  <br> <span class="trn" data-trn-key="please_wait">Por favor Espere</span>.  
 </ons-modal>
 
 <ons-modal var="loaderSearch">
   <ons-icon icon="fa-circle-o-notch" spin="true"></ons-icon>
   <br>
-  <br> <span class="trn" data-trn-key="searching_for_restaurant">Searching for restaurant</span>
+  <br> <span class="trn" data-trn-key="searching_for_restaurant">Buscar Restaurtante</span>
 </ons-modal>
 
 <ons-modal var="loaderLang">
   <ons-icon icon="fa-circle-o-notch" spin="true"></ons-icon>
   <br>
-  <br> loading languages
+  <br> Cargando Lenguajes
 </ons-modal>
 
 <ons-sliding-menu main-page="home.html" menu-page="menu.html" side="left" var="menu" close-on-tap type="overlay" >
@@ -92,42 +92,42 @@
   
   <ons-list class="main-menu-list">
     <ons-list-item onclick="setHome();" class="bottom-menu-item" >
-      <ons-icon icon="ion-ios-home-outline"></ons-icon> <span class="trn" data-trn-key="home">Home</span>
+      <ons-icon icon="ion-ios-home-outline"></ons-icon> <span class="trn" data-trn-key="home">Inicio</span>
     </ons-list-item>
     
     <ons-list-item onclick="menu.setMainPage('browseRestaurant.html', {closeMenu: true})" class="bottom-menu-item">
       <ons-icon icon="ion-android-menu"></ons-icon> 
-      <span class="trn" data-trn-key="browse_resto">Browse Restaurant</span>
+      <span class="trn" data-trn-key="browse_resto">Buscar Restaurtante</span>
     </ons-list-item>
     
     <ons-list-item onclick="showProfile();" class="bottom-menu-item">
       <ons-icon icon="ion-android-contact"></ons-icon> 
-      <span class="trn" data-trn-key="profile">Profile</span>
+      <span class="trn" data-trn-key="profile">Perfil</span>
     </ons-list-item>    
     
     <ons-list-item onclick="showOrders();" class="bottom-menu-item">
       <ons-icon icon="ion-android-restaurant"></ons-icon> 
-      <span class="trn" data-trn-key="orders">Orders</span>
+      <span class="trn" data-trn-key="orders">Ordenes</span>
     </ons-list-item>      
     
     <ons-list-item onclick="showAddressBook();" class="bottom-menu-item">
       <ons-icon icon="ion-ios-location"></ons-icon> 
-      <span class="trn" data-trn-key="address_book">Address Book</span>
+      <span class="trn" data-trn-key="address_book">Directorio</span>
     </ons-list-item>    
     
     <ons-list-item onclick="menu.setMainPage('pts.html', {closeMenu: true})" class="menu-pts bottom-menu-item">
       <ons-icon icon="ion-connection-bars"></ons-icon> 
-      <span class="trn" data-trn-key="my_points">My Points</span>
+      <span class="trn" data-trn-key="my_points">Mis puntos</span>
     </ons-list-item>    
     
     <ons-list-item onclick="menu.setMainPage('settings.html', {closeMenu: true})" class="bottom-menu-item">
       <ons-icon icon="ion-gear-a"></ons-icon> 
-      <span class="trn" data-trn-key="settings">Settings</span>
+      <span class="trn" data-trn-key="settings">Configuraciones</span>
     </ons-list-item>    
     
     <ons-list-item onclick="logout();" class="bottom-menu-item logout-menu">
       <ons-icon icon="ion-log-out"></ons-icon> 
-      <span class="trn" data-trn-key="logout">Logout</span>
+      <span class="trn" data-trn-key="logout">Salir</span>
     </ons-list-item>    
             
   </ons-list>
@@ -149,7 +149,7 @@
     </div> 
        
     <div class="home-page wrapper center">       
-       <h4 class="trn" data-trn-key="enter_your_location">Enter your location</h4>
+       <h4 class="trn" data-trn-key="enter_your_location">Ingresa tu ubicación</h4>
        
        <section class="field-section">
          <input id="s" value="" type="text" class="text-input text-input--underbar trn" ng-model="text" placeholder="Street Address,City,State" data-trn-key="home_search_placeholder" 
@@ -159,22 +159,22 @@
        <div class="padtop25">
        <button class="button button--quiet green" onclick="getCurrentLocation();">
        <ons-icon icon="fa-location-arrow"></ons-icon>
-         <span class="trn" data-trn-key="use_my_location">Use my current location</span>
+         <span class="trn" data-trn-key="use_my_location">Usar mi ubicación actual</span>
        </button>       
        </div>
        
         <button class="button green-btn button--large" onclick="searchMerchant();">
-	      <span class="trn" data-trn-key="search_restaurant">Search Restaurant</span>    	      
+	      <span class="trn" data-trn-key="search_restaurant">Buscar restaurante</span>    	      
 	      <div class="search-btn"><ons-icon icon="fa-chevron-right"></ons-icon></div>
 	   </button>	  
     </div>      
 
     <div class="wrapper no-connection">
       <ons-icon icon="ion-wifi" id="ion-wifi"></ons-icon>
-      <p class="trn" data-trn-key="connection_lost" >CONNECTION LOST</p>      
+      <p class="trn" data-trn-key="connection_lost" >CONECIÓN PERDIDA</p>      
       <button class="button button--quiet green" onclick="refreshConnection();">
       <ons-icon icon="ion-android-refresh">
-         </ons-icon> <span class="trn" data-trn-key="tap_to_retry">Tap to retry</span>
+         </ons-icon> <span class="trn" data-trn-key="tap_to_retry">Presiona para volver a intentar</span>
       </button>
     </div>   
         
@@ -217,7 +217,7 @@
 
   <ons-page id="page-filter-options" >  
 	  <ons-toolbar> 
-	      <div class="center white trn" data-trn-key="filter_results">Filter Results</div>   
+	      <div class="center white trn" data-trn-key="filter_results">Resultados de filtro</div>   
 	      
 	      <div class="right">
              <ons-toolbar-button onclick="applyFilter()"><ons-icon icon="fa-check"></ons-toolbar-button>         
@@ -237,7 +237,7 @@
 <ons-page id="menucategory-page">
    <ons-toolbar>        
      <div class="left"><ons-back-button></ons-back-button></div>     
-     <div class="center white"><span id="search-text" class="trn" data-trn-key="menu" >Menu</span></div>           
+     <div class="center white"><span id="search-text" class="trn" data-trn-key="menu" >Menú</span></div>           
      
      <div class="right">
          <ons-toolbar-button>         
@@ -360,9 +360,9 @@
    
    <div class="wrapper">
        <ons-row class="row">
-           <ons-col class="text-big concat-text trn" width="60%" data-trn-key="your_order">Your Order</ons-col>
+           <ons-col class="text-big concat-text trn" width="60%" data-trn-key="your_order">Su orden</ons-col>
            <ons-col class="text-right" >
-              <button class="edit-order button button--quiet green trn" data-trn-key="edit_order">Edit Order</button>
+              <button class="edit-order button button--quiet green trn" data-trn-key="edit_order">Editar Orden</button>
               <button class="order-apply-changes button button--quiet green trn" data-trn-key="apply_changes">
               Apply Changes</button>
            </ons-col>
@@ -392,7 +392,7 @@
    
    <div class="field-wrapper">
    <button class="button button--quiet green" onclick="addressPopup();" >
-        <ons-icon icon="ion-location"></ons-icon> <span class="trn" data-trn-key="change_your_address">Change your address here</span>
+        <ons-icon icon="ion-location"></ons-icon> <span class="trn" data-trn-key="change_your_address">Cambiar su dirección aquí</span>
    </button>       
    </div>  
       
@@ -412,7 +412,7 @@
 <ons-page id="page-checkoutsignup" class="onsen-display">
    <ons-toolbar>        
      <div class="left"><ons-back-button></ons-back-button></div>     
-     <div class="center white"><span id="search-text" class="trn" data-trn-key="cart">Cart</span></div>                         
+     <div class="center white"><span id="search-text" class="trn" data-trn-key="cart">Carrito</span></div>                         
      <div class="right">
      </div>
    </ons-toolbar>
@@ -432,7 +432,7 @@
       
    <div class="wrapper">
        <ons-row class="row">
-           <ons-col class="text-big concat-text trn" width="60%" data-trn-key="signup" >Signup</ons-col>
+           <ons-col class="text-big concat-text trn" width="60%" data-trn-key="signup" >Ingresar</ons-col>
            <ons-col class="text-right" >
               <button class="button button--quiet green trn" onclick="showLogin(1);" data-trn-key="sign_in">
               Sign in
@@ -475,11 +475,11 @@
       </div>
       
       <p class="small-font-dim trn" data-trn-key="create_account_terms">
-      By creating an account, you agree to receive sms from vendor.</p>      
+      Al crear una cuenta, usted acepta recibir SMS desde el proveedor.</p>      
    </div>
    
    <button class="button green-btn button--large trn" onclick="clientRegistration();" data-trn-key="create_account" >
-	Create Account
+	Crear Cuenta
 	<div class="search-btn"><ons-icon icon="fa-chevron-right"></ons-icon></div>
    </button>
    </form>
@@ -491,7 +491,7 @@
 <ons-page id="page-shipping" class="onsen-display">
    <ons-toolbar>        
      <div class="left"><ons-back-button></ons-back-button></div>     
-     <div class="center white"><span id="search-text" class="trn" data-trn-key="cart">Cart</span></div>     
+     <div class="center white"><span id="search-text" class="trn" data-trn-key="cart">Carro</span></div>     
    </ons-toolbar>
    
    <div class="orange-header">
@@ -516,7 +516,7 @@
    </div>  
       
    <button class="select-addressbook button button--quiet green" onclick="popUpAddressBook();" >
-   <span class="trn" data-trn-key="select_from_address">Select from your address book</span>
+   <span class="trn" data-trn-key="select_from_address">Seleccione de la libreta de direcciones</span>
    <ons-icon icon="ion-ios-location-outline"></ons-icon>
    </button> 
    
@@ -570,7 +570,7 @@
    
    <div class="wrapper">
 	   <div class="field-wrapper">
-	     <span class="small-font-dim trn" data-trn-key="save_address_book">Save to my address book</span>
+	     <span class="small-font-dim trn" data-trn-key="save_address_book">Guardar en mi libreta de direcciones</span>
 	     <label class="switch">
 			  <input type="checkbox" value="2" class="switch__input save_address" name="save_address" >
 			  <div class="switch__toggle"></div>
@@ -592,7 +592,7 @@
 
   <ons-page id="page-dialog-addressbook" >  
 	  <ons-toolbar> 
-	      <div class="center white trn" data-trn-key="address_book">Address Book</div>   	      	      	      
+	      <div class="center white trn" data-trn-key="address_book">Directorio</div>   	      	      	      
 	  </ons-toolbar>	  
 	  	
 	  <ons-scroller id="addressbook-popup">   
@@ -606,7 +606,7 @@
 <ons-page id="page-paymentoption" class="onsen-display">
    <ons-toolbar>        
      <div class="left"><ons-back-button></ons-back-button></div>     
-     <div class="center white"><span id="search-text" class="trn" data-trn-key="cart">Cart</span></div>                         
+     <div class="center white"><span id="search-text" class="trn" data-trn-key="cart">Carro</span></div>                         
      <div class="right">        
      </div>
    </ons-toolbar>
@@ -626,7 +626,7 @@
    
    <div class="wrapper">
        <ons-row class="row">
-           <ons-col class="text-big trn" data-trn-key="how_you_like_pay" >How would you like to pay?</ons-col>           
+           <ons-col class="text-big trn" data-trn-key="how_you_like_pay" >¿Cómo le gustaría pagar?</ons-col>           
        </ons-row>
    </div>  
    
@@ -669,18 +669,18 @@
        
         <ons-list-item class="center apply-voucher">                 
         <input type="text" name="voucher_code"  class="voucher_code text-input text-input--underbar" 
-         placeholder="Enter Voucher here" value=""  >                
+         placeholder="Enter Voucher here" value="">                
         </ons-list-item>
         
         <ons-list-item class="center apply-voucher">
         <button class="button button--quiet green" onclick="applyVoucher();" >
-         <span class="trn" data-trn-key="apply_voucher">Apply Voucher</span>          
+         <span class="trn" data-trn-key="apply_voucher">Aplicar Vale</span>          
         </button>  
         </ons-list-item>
         
         <ons-list-item class="center remove-voucher">
         <button class="button button--quiet green" onclick="removeVoucher();" >
-         <span class="trn" data-trn-key="remove_voucher">Remove Voucher</span>          
+         <span class="trn" data-trn-key="remove_voucher">Retirar Vale</span>          
         </button>  
         </ons-list-item>
        
@@ -690,7 +690,7 @@
    <div class="wrapper pts-apply-points-wrap">
      <ons-list >
        <ons-list-header class="center" >
-       <span class="trn" data-trn-key="your_points" >Your points</span> :
+       <span class="trn" data-trn-key="your_points" >sus puntos</span> :
        <span class="pts_available_points"></span>
        </ons-list-header>
        
@@ -701,7 +701,7 @@
        
        <ons-list-item class="center pts_pts">
         <button class="button button--quiet green" onclick="applyRedeem();" >
-         <span class="trn" data-trn-key="redeem">Redeem</span>          
+         <span class="trn" data-trn-key="redeem">Canjear</span>          
         </button>  
         </ons-list-item>
         
@@ -709,7 +709,7 @@
         
         <ons-list-item class="center pts_pts_cancel">
         <button class="button button--quiet green" onclick="cancelRedeem();" >
-         <span class="trn" data-trn-key="cancel">Cancel</span>          
+         <span class="trn" data-trn-key="cancel">Cancelar</span>          
         </button>  
         </ons-list-item>
        
@@ -736,7 +736,7 @@
      </ons-toolbar-button>
      
      </div>     
-     <div class="center white"><span id="search-text" class="trn" data-trn-key="receipt">Receipt</span></div>                         
+     <div class="center white"><span id="search-text" class="trn" data-trn-key="receipt">Recibo</span></div>                         
      <div class="right">        
      </div>
    </ons-toolbar>
@@ -748,19 +748,19 @@
            </div>
         </ons-col>
         <ons-col class="text-right">           
-           <p class="restauran-title concat-text white">Total Paid</p>  
+           <p class="restauran-title concat-text white">Pago Total</p>  
            <p class="text-big white total-amount"></p>         
         </ons-col>
       </ons-row>
    </div> 
    
    <div class="wrapper center">
-       <h2 class="trn" data-trn-key="thank_you">Thank You</h2>
+       <h2 class="trn" data-trn-key="thank_you">Gracias</h2>
        <p class="receipt-msg"></p>
        <ons-icon icon="fa-check-circle" class="myfa-check">
        <br/>
        <button class="button button--quiet green" onclick="menu.setMainPage('home.html', {closeMenu: true})" >
-       <span class="trn" data-trn-key="back_to_home">back to home</span>
+       <span class="trn" data-trn-key="back_to_home">Regresar</span>
         <ons-icon icon="fa-long-arrow-right"></ons-icon>
        </button>       
    </div> 
@@ -772,7 +772,7 @@
 <ons-page id="page-merchantinfo" class="onsen-display">
    <ons-toolbar>        
      <div class="left"><ons-back-button></ons-back-button></div> 
-     <div class="center white"><span id="search-text" class="trn" data-trn-key="resto_info">Restaurant Info</span></div>                         
+     <div class="center white"><span id="search-text" class="trn" data-trn-key="resto_info">Información del restaurante</span></div>                         
      <div class="right">        
      </div>
    </ons-toolbar>
@@ -798,16 +798,16 @@
    </div> 
    
    <ons-list class="list-dim-text">
-       <ons-list-header class="center trn" data-trn-key="opening_hours">Opening Hours</ons-list-header>
+       <ons-list-header class="center trn" data-trn-key="opening_hours">Horario de apertura</ons-list-header>
        <ons-list-item class="center opening-hours"> 
        </ons-list-item>
    </ons-list>
    
    <ons-list id="book-table" class="list-dim-text">
-     <ons-list-header class="center trn" data-trn-key="book_a_table">Book a table</ons-list-header>
+     <ons-list-header class="center trn" data-trn-key="book_a_table">Reservar una mesa</ons-list-header>
      <ons-list-item class="center">       
        <button class="button button--quiet green bold trn" onclick="loadBookingForm();" data-trn-key="book_here">
-          Book Here
+          Reserve Aquí
        </button>       
      </ons-list-item>
    </ons-list>   
@@ -816,7 +816,7 @@
    </ons-list>
    
    <ons-list id="merchant-reviews" class="list-dim-text">
-     <ons-list-header class="center trn" data-trn-key="reviews">Reviews</ons-list-header>
+     <ons-list-header class="center trn" data-trn-key="reviews">opiniones</ons-list-header>
      <ons-list-item class="center">
        <span class="latest-review"></span><br/>
        <button class="button button--quiet green bold trn" onclick="loadMoreReviews();" data-trn-key="read_more_reviews">
@@ -826,7 +826,7 @@
    </ons-list>
            
    <ons-list class="list-dim-text center">
-     <ons-list-header class="center trn" data-trn-key="map">Map</ons-list-header>     
+     <ons-list-header class="center trn" data-trn-key="map">Mapa</ons-list-header>     
      <address></address>
    </ons-list>
    <div id="merchant-map"></div>   
@@ -839,7 +839,7 @@
 <ons-page id="page-booking" class="onsen-display">
    <ons-toolbar>        
      <div class="left"><ons-back-button></ons-back-button></div> 
-     <div class="center white"><span id="search-text" class="trn" data-trn-key="book_a_table">Book a table</span></div>                         
+     <div class="center white"><span id="search-text" class="trn" data-trn-key="book_a_table">Reservar una mesa</span></div>                         
      <div class="right">        
      </div>
    </ons-toolbar>
@@ -909,7 +909,7 @@
 <ons-page id="page-booking-ty" class="onsen-display">
    <ons-toolbar>             
      <div class="left"><ons-back-button></ons-back-button></div> 
-     <div class="center white"><span id="search-text">Booking</span></div>                         
+     <div class="center white"><span id="search-text">Reserva</span></div>                         
      <div class="right">        
      </div>
    </ons-toolbar>
@@ -943,7 +943,7 @@
 <ons-page id="page-reviews" class="onsen-display">
    <ons-toolbar>        
      <div class="left"><ons-back-button></ons-back-button></div> 
-     <div class="center white"><span id="search-text" class="trn" data-trn-key="reviews">Reviews</span></div>                         
+     <div class="center white"><span id="search-text" class="trn" data-trn-key="reviews">Comentarios</span></div>                         
      <div class="right">        
          <ons-toolbar-button onclick="showReviewForm();" ><ons-icon icon="ion-plus-round"></ons-toolbar-button>
      </div>
@@ -972,7 +972,7 @@
 <ons-page id="page-addreviews" class="onsen-display">
    <ons-toolbar>        
      <div class="left"><ons-back-button></ons-back-button></div> 
-     <div class="center white"><span id="search-text" class="trn" data-trn-key="add_review">Add Reviews</span></div>                 
+     <div class="center white"><span id="search-text" class="trn" data-trn-key="add_review">Añadir Comentarios</span></div>                 
    </ons-toolbar>      
 
     <div class="orange-header">
@@ -1020,7 +1020,7 @@
      </ons-toolbar-button>        
     </div> 
          
-    <div class="center white"><span id="search-text" class="trn" data-trn-key="browse_resto">Browse Restaurant</span></div>           
+    <div class="center white"><span id="search-text" class="trn" data-trn-key="browse_resto">Navegar restaurante</span></div>           
     
     <div class="right">
       <ons-toolbar-button><ons-icon icon="fa-search" onclick="showFilterResto();"></ons-toolbar-button>
@@ -1028,7 +1028,7 @@
         
    </ons-toolbar>
    
-   <div class="results-header arrow_box"><span class="result-msg trn" data-trn-key="processing">processing</span></div>
+   <div class="results-header arrow_box"><span class="result-msg trn" data-trn-key="processing">Tratamiento</span></div>
    
    <ons-scroller>
      <ons-list class="restaurant-list"  id="browse-results" >
@@ -1044,7 +1044,7 @@
 
   <ons-page id="page-filterbrowse" >  
 	  <ons-toolbar> 
-	      <div class="center white trn" data-trn-key="filter_resto">Filter Restaurant</div>   	      	      	      
+	      <div class="center white trn" data-trn-key="filter_resto">Filtro Restaurante</div>   	      	      	      
 	  </ons-toolbar>	  	  
 	  	  	   
 	  
@@ -1077,7 +1077,7 @@
      </ons-toolbar-button>        
     </div> 
          
-    <div class="center white"><span id="search-text" class="trn" data-trn-key="profile">Profile</span></div>                  
+    <div class="center white"><span id="search-text" class="trn" data-trn-key="profile">Perfil</span></div>                  
    </ons-toolbar>
    
     <div class="profile-pic-wrap">
@@ -1147,17 +1147,17 @@
    
     <div class="home-header">
       <img src="css/images/banner.png" alt="" title="">
-      <p class="center trn" data-trn-key="please_log_or_reg">Please log in or register to continue with<br>your order</p>
+      <p class="center trn" data-trn-key="please_log_or_reg">Por favor, iniciar sesión o registrarse para continuar<br>con su pedido</p>
     </div> 
 
    <div class="wrapper center wrapper-white fb-login-wrap">   
       <button class="button blue-btn button--large fb-loginbutton" id="fb-loginbutton" onclick="myFacebookLogin();">
-        <ons-icon icon="fa-facebook"></ons-icon> <span class="trn" data-trn-key="sigin_fb">Sign in with Facebook</span>
+        <ons-icon icon="fa-facebook"></ons-icon> <span class="trn" data-trn-key="sigin_fb">ingresar con Facebook</span>
       </button>                   
    </div>   
       
    <div class="wrapper center">      
-      <h4 class="trn" data-trn-key="or_use_your_email">or use your email address</h4>                         
+      <h4 class="trn" data-trn-key="or_use_your_email">o utilizar su de correo electrónico</h4>                         
       <br/>
       
       <button class="trn button green-btn button--large" onclick="showLogin();" data-trn-key="login">
@@ -1165,7 +1165,7 @@
       </button>
       
       <br/>
-      <p class="small-font-dim trn" data-trn-key="you_dont_have_account">You dont have account?</p>
+      <p class="small-font-dim trn" data-trn-key="you_dont_have_account">No tienes cuenta?</p>
       <button class="trn button button--quiet green" onclick="showSignupForm();" data-trn-key="create_account">
        Create Account
        </button>                   
@@ -1180,17 +1180,17 @@
 
    <ons-toolbar>        
     <div class="left"><ons-back-button></ons-back-button></div>             
-    <div class="center white"><span id="search-text" class="trn" data-trn-key="login">Log in</span></div>                  
+    <div class="center white"><span id="search-text" class="trn" data-trn-key="login">Ingresar</span></div>                  
    </ons-toolbar>
 
    <div class="wrapper center wrapper-white page-login-fb">   
       <button class="button blue-btn button--large fb-loginbutton" id="fb-loginbutton" onclick="myFacebookLogin();">
         <ons-icon icon="fa-facebook"></ons-icon> 
-        <span class="sigin_fb trn" data-trn-key="sigin_fb">Sign in with Facebook</span>
+        <span class="sigin_fb trn" data-trn-key="sigin_fb">Ingresar con facebook</span>
       </button>                   
       
    <div class="center pad-top10">
-   <h4 class="trn" data-trn-key="or_use_your_email">or use your email address</h4>
+   <h4 class="trn" data-trn-key="or_use_your_email">o usa tu correo electrónico</h4>
    </div>
       
    </div>   
@@ -1232,15 +1232,15 @@
 
   <ons-page id="page-forgotpass" >  
 	  <ons-toolbar> 
-	      <div class="center white trn" data-trn-key="forgot_pass">Forgot Password</div>  	      	      
+	      <div class="center white trn" data-trn-key="forgot_pass">Se te olvidó tu contraseña</div>  	      	      
 	  </ons-toolbar>
 	  
 	  <form id="frm-forgotpass" class="frm-forgotpass" method="post">   
       <div class="wrapper">
       
       <p class="center small-font-dim trn" data-trn-key="forgot_pass_message">
-      Enter your email address you registered<br/>with and we will send you
-      instruction <br/>on how to reset your password
+      Entroduzca su dirección de correo electrónico que registró<br/>con y le enviaremos
+       instrucción<br/>sobre cómo restablecer su contraseña
       </p>
       
           <div class="field-wrapper">
@@ -1265,7 +1265,7 @@
 
    <ons-toolbar>        
     <div class="left"><ons-back-button></ons-back-button></div>             
-    <div class="center white"><span id="search-text" class="trn" data-trn-key="register">Register</span></div>                  
+    <div class="center white"><span id="search-text" class="trn" data-trn-key="register">Registro</span></div>                  
    </ons-toolbar>
        
    
@@ -1302,7 +1302,7 @@
       placeholder="Confirm Password" value="" data-validation="required" data-validation-error-msg="this field is mandatory!" >
       </div>
       
-      <p class="small-font-dim trn" data-trn-key="create_account_info">By creating an account, you agree to receive sms from vendor.</p>      
+      <p class="small-font-dim trn" data-trn-key="create_account_info">Al crear una cuenta, usted acepta recibir SMS desde el proveedor.</p>      
    </div>
    
    <button class="trn button green-btn button--large" onclick="signup();" data-trn-key="create_account">
@@ -1325,7 +1325,7 @@
      </ons-toolbar-button>        
     </div> 
          
-    <div class="center white"><span id="search-text" class="trn" data-trn-key="your_recent_order">Your Recent Order</span></div>                  
+    <div class="center white"><span id="search-text" class="trn" data-trn-key="your_recent_order">Su pedido reciente</span></div>                  
    </ons-toolbar>
    
    <ons-scroller id="recent-orders">      
@@ -1344,7 +1344,7 @@
    </ons-toolbar>
    
   <div class="wrapper center"> 
-    <h3 class="text-big title"><span class="trn" data-trn-key="total">Total</span> : $ 0.00</h3>
+    <h3 class="text-big title"><span class="trn" data-trn-key="total">Total</span> : S/ 0.00</h3>
   </div>
    
   <ons-list class="list-dim-text" id="item-details">       
@@ -1370,7 +1370,7 @@
      </ons-toolbar-button>        
     </div> 
          
-    <div class="center white"><span id="search-text" class="trn" data-trn-key="address_book">Address Book</span></div>                  
+    <div class="center white"><span id="search-text" class="trn" data-trn-key="address_book">Directorio</span></div>                  
     
     <div class="right">
       <ons-toolbar-button><ons-icon icon="ion-plus-round" onclick="newAddressBook();"></ons-toolbar-button>
@@ -1431,7 +1431,7 @@
       </div>
             
       <div class="field-wrapper">
-         <span class="small-font-dim trn" data-trn-key="defaul_address">Default address</span>
+         <span class="small-font-dim trn" data-trn-key="defaul_address">Dirección predeterminada</span>
          <label class="switch">
 			  <input type="checkbox" value="2" class="switch__input as_default" name="as_default" >
 			  <div class="switch__toggle"></div>
@@ -1464,7 +1464,7 @@
 	   <p>          
           <ons-button class="trn button green-btn button--large" onclick="showOrders2();" data-trn-key="view">
           View</ons-button>
-          <button onclick="pushDialog.hide();" class="button button--quiet trn" data-trn-key="cancel">Cancel</button>
+          <button onclick="pushDialog.hide();" class="button button--quiet trn" data-trn-key="cancel">Cancelar</button>
         </p>
 	  
 	  </div>  
@@ -1509,7 +1509,7 @@
      </ons-toolbar-button>        
     </div> 
          
-    <div class="center white"><span id="search-text" class="trn" data-trn-key="settings">Settings</span></div>                  
+    <div class="center white"><span id="search-text" class="trn" data-trn-key="settings">Configuración</span></div>                  
    </ons-toolbar>
       
    <form id="frm-settings" class="frm-settings" method="post">   
@@ -1524,16 +1524,16 @@
         </ons-list-item>
       </ons-list>
    
-     <div class="settings-header trn" data-trn-key="notifications">Notifications</div>
+     <div class="settings-header trn" data-trn-key="notifications">Notificaciones</div>
      <ons-list modifier="inset" class="settings-list">        
         <ons-list-item >
-          <span class="trn" data-trn-key="enabled_push_notification">Enabled Push Notification</span>
+          <span class="trn" data-trn-key="enabled_push_notification">Activar notificaciones</span>
           <ons-switch modifier="list-item" var="enabled_push" name="enabled_push" id="enabled_push"  >
           </ons-switch>
         </ons-list-item>
       </ons-list>
       
-       <div class="settings-header trn" data-trn-key="others">Others</div>
+       <div class="settings-header trn" data-trn-key="others">Otros</div>
              
       
       <ons-list modifier="inset" class="settings-list">
@@ -1544,7 +1544,7 @@
       
       <ons-list modifier="inset" class="settings-list">
         <ons-list-item modifier="chevron" onclick="showLanguageList();" class="trn" data-trn-key="select_your_language">
-          Select your language
+         elige tu idioma
         </ons-list-item>        
       </ons-list>
             
@@ -1566,7 +1566,7 @@
 
   <ons-page id="page-locations" >  
 	  <ons-toolbar> 
-	      <div class="center white trn" data-trn-key="select_country">Select Country</div>   	      	      	      
+	      <div class="center white trn" data-trn-key="select_country">Seleccionar país</div>   	      	      	      
 	      
 	      <div class="right">         
             <ons-toolbar-button onclick="locationDialog.hide();" >
@@ -1587,7 +1587,7 @@
 
   <ons-page id="page-adddresspopup" >  
 	  <ons-toolbar> 
-	      <div class="center white trn" data-trn-key="enter_your_location">Enter your location</div>   	      	      
+	      <div class="center white trn" data-trn-key="enter_your_location">Ingresa tu ubicación</div>   	      	      
 	  </ons-toolbar>
 
 	  <form id="frm-adddresspopup" class="frm-adddresspopup" method="post">   
@@ -1614,7 +1614,7 @@
 
   <ons-page id="page-languageoptions" >  
 	  <ons-toolbar> 
-	      <div class="center white trn" data-trn-key="select_your_language">Select your language</div>   	      	      	      	      
+	      <div class="center white trn" data-trn-key="select_your_language">elige tu idioma</div>   	      	      	      	      
 	      <div class="right">         
             <ons-toolbar-button onclick="languageOptions.hide();" >
             <ons-icon icon="ion-checkmark-round"></ons-toolbar-button>
@@ -1849,15 +1849,15 @@
    <input type="hidden" id="is_checkout" name="is_checkout" class="is_checkout" value=""> 
    
    <p class="mobile-verification-msg trn center p-dim" data-trn-key="validation_mobile_help_msg">
-   We have sent verification code to your mobile number
+   Hemos enviado el código de verificación a su número de teléfono móvil
    </p>
    
    <p class="email-verification-msg trn center p-dim" data-trn-key="validation_email_help_msg">
-   We have sent verification code to your email address
+   Hemos enviado el código de verificación a su dirección de correo electrónico
    </p>
    
    <p class="trn center p-dim" data-trn-key="enter_your_verification_code">
-   Please enter you verification code
+   Por favor ingrese su código de verificación
    </p>
    
    <div class="field-wrapper">
@@ -1884,7 +1884,7 @@
      </ons-toolbar-button>        
     </div> 
          
-    <div class="center white"><span id="search-text" class="trn" data-trn-key="my_points">My Points</span></div>                  
+    <div class="center white"><span id="search-text" class="trn" data-trn-key="my_points">Mis puntos</span></div>                  
    </ons-toolbar>
   
      <ons-list>
