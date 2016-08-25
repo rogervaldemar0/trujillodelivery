@@ -4,5 +4,5 @@ var krms_config ={
 	'DialogDefaultTitle' : "Trujillo Delivery",
 	'pushNotificationSenderid' : "26768168976",
 	'facebookAppId' : "1595558240736899",
-	'APIHasKey' : "YOUR API HASH KEY (OPTIONAL)"
+	'APIHasKey' : "$2y$10$8IIyWww8.9D823nKzn4TmOmPB/VGJkeMhZ164VW.3DOHWqdcr1Fc2"
 };
