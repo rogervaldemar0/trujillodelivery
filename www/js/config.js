@@ -1,8 +1,8 @@
 
 var krms_config ={	
-	'ApiUrl' : "http://trujillodelivery.com/mobileapp/api",
-	'DialogDefaultTitle' : "Trujillo Delivery",
-	'pushNotificationSenderid' : "26768168976",
-	'facebookAppId' : "1595558240736899",
-	'APIHasKey' : "2jmj7l5rSw0yVb/vlWAYkK/YBwk="
+	'ApiUrl' : "YOUR_API_URL",
+	'DialogDefaultTitle' : "YOUR_OWN_DIALOG_TITLE",
+	'pushNotificationSenderid' : "YOUR_ANDROID_PUSH_PROJECT_ID",
+	'facebookAppId' : "YOUR_FACEBOOK_APP_ID",
+	'APIHasKey' : "YOUR API HASH KEY (OPTIONAL)"
 };
