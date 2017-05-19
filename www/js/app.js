@@ -4219,7 +4219,7 @@ function onRequestSuccess()
 	loader.show();
 	//  {enableHighAccuracy:false,maximumAge:Infinity, timeout:60000}
 	navigator.geolocation.getCurrentPosition(geolocationSuccess,geolocationError, 
-	 { timeout: 15000 , enableHighAccuracy: getLocationAccuracy() } );	
+	 { timeout: 10000 , enableHighAccuracy: getLocationAccuracy() } );	
 	 
 	/*navigator.geolocation.getCurrentPosition(geolocationSuccess,geolocationError, 
 	 { timeout:10000 , enableHighAccuracy: false } );	*/
@@ -4242,7 +4242,7 @@ function getCurrentLocationOld()
     //GPS is enabled! 
      loader.show();
 	 navigator.geolocation.getCurrentPosition(geolocationSuccess,geolocationError, 
-	 { timeout:15000 , enableHighAccuracy: getLocationAccuracy() } );	
+	 { timeout:10000 , enableHighAccuracy: getLocationAccuracy() } );	
    },
    function fail(){
       //GPS is disabled!
@@ -4271,7 +4271,6 @@ function getCurrentLocationOld()
 
 function geolocationSuccess(position)
 {
-alert("lat="+position.coords.latitude + " lng="+position.coords.longitude);
 	dump(position);
 	var params="lat="+position.coords.latitude;
 	params+="&lng="+position.coords.longitude;
@@ -5417,7 +5416,7 @@ function onMapInit()
 	    	 toastMsg( error.message );
 	    	 // end position error
 	      }, 
-          { timeout: 15000, enableHighAccuracy : getLocationAccuracy() } 
+          { timeout: 10000, enableHighAccuracy : getLocationAccuracy() } 
         );	    	  
      	
      });     
@@ -5476,7 +5475,7 @@ function viewTaskDirection()
     	 toastMsg( error.message );
     	 // end position error
       }, 
-      { timeout: 15000, enableHighAccuracy : getLocationAccuracy() } 
+      { timeout: 10000, enableHighAccuracy : getLocationAccuracy() } 
     );	    	  		
 	
 }
@@ -5824,7 +5823,7 @@ function MapInit_addressMap()
 	  	 hideAllModal();
     	 toastMsg( error.message );    	 
       }, 
-      { timeout: 15000, enableHighAccuracy : getLocationAccuracy() } 
+      { timeout: 10000, enableHighAccuracy : getLocationAccuracy() } 
     );	   
 }
 

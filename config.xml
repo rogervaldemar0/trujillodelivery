@@ -5,12 +5,12 @@
     id        = "kmrs.mobile.app"
     versionCode = "10"
     version   = "1.3.6">
-    <name>Trujillo Delivery</name>
+    <name>Karenderia Mobile App</name>
     <description>
-       Trujillo Delivery, donde Podrás elegir y disfrutar miles de opciones...
+        Karenderia mobile app version
     </description>
-    <author email="contacto@trujillodelivery.com" href="http://trujillodelivery.com">
-        Trujillodelivery.com
+    <author email="basti@codemywebapps.com" href="http://cordova.io">
+        codemywebapps.com
     </author>
     <icon src="icon.png" />           
     <content src="index.html" />
@@ -38,8 +38,8 @@
 	<gap:plugin name="cordova.plugins.diagnostic" source="npm" />	
 	
 	<gap:plugin name="cordova-plugin-googlemaps"  source="npm" >
-	   <param name="API_KEY_FOR_ANDROID" value="AIzaSyA-yDaBIAT3XsW6rL6KqmE8kSjNa9S8aK8" />
-	   <param name="API_KEY_FOR_IOS" value="AIzaSyA-yDaBIAT3XsW6rL6KqmE8kSjNa9S8aK8" />
+	   <param name="API_KEY_FOR_ANDROID" value="XXX" />
+	   <param name="API_KEY_FOR_IOS" value="XXX" />
 	</gap:plugin>
 	
 	<gap:splash src="splash.png" />
